@@ -1,0 +1,198 @@
+* {
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #vanta-background {
+    position: absolute;
+    top: 145px; 
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 145px); 
+    z-index: -1; 
+  }
+ body {
+    background-image:url(bird-header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  /* Header Styles */
+  header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-image:url(bird-header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Title & Image Styles */
+  .title {
+    margin: 0 auto;
+    padding-top: .5em;
+    padding-left: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .imgs {
+    width: 50px;
+    height: auto;
+    border-top-left-radius: 40%;
+   border-top-right-radius: 40%;
+   border-bottom-left-radius: 40%;
+   border-bottom-right-radius: 40%;
+  }
+  .navcls {
+    margin: 0;
+    background-color: rgb(14, 14, 45);
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 20px;
+    padding-right: 12em;
+  }
+  .divcls {
+    margin: 0;
+    width: 150vh;
+    background-color:rgb(4, 118, 135);
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    word-spacing: 20px;
+  }
+  
+  .navcls a {
+    color: white;
+    text-decoration: none;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  li {
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  
+  .sound-button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    background-color: #7800f9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 5px 5px 20px #000000;
+    text-align: center;
+  }
+  
+  .sound-button:hover {
+    background-color: #be3cd8;
+  }
+  .Back-button {
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 8px 16px;
+    margin: 10px 0 12px 0px; /* Top: 20px, Right: 0, Bottom: 20px, Left: 20px */
+    background-color:rgb(4, 118, 135);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 5px 5px 20px #000000;
+    text-align: center;
+  }
+.divcls {
+    margin-left: auto;/*pust others to left*/
+}
+.Back-button:hover {
+  background-color:rgb(14, 14, 66);
+}
+  /*xo board css*/
+.medium{
+  padding-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px;
+  color: black ;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.cell:hover {
+  background-color: lightgray;
+}
+
+.status {
+  color:rgb(120, 120, 206);
+  font-size: 24px;
+  margin: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.winning-cell {
+  background-color: #90EE90 !important;
+}
+
+/*end xo board css*/
+
+
+  
